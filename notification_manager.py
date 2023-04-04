@@ -1,4 +1,5 @@
 import requests
+from auth import YOUR_EMAIL, USER_EMAIL, EMAIL_PASSWORD
 
 # http requests
 
@@ -20,9 +21,9 @@ class NotificationManager:
         self.now = datetime.datetime.now()
         self.SERVER = "smtp.gmail.com"
         self.PORT = 587
-        self.FROM = "yasuomonkey68@gmail.com"  # Your Email
-        self.TO = "monkeydyasuo1@gmail.com"  # The Person you wanna send to
-        self.PASS = "xihyssylrlwdmwpd"  # Password to your Email (password you generate through ur email)
+        self.FROM = YOUR_EMAIL  # Your Email
+        self.TO = USER_EMAIL  # The Person you wanna send to
+        self.PASS = EMAIL_PASSWORD  # Password to your Email (password you generate through ur email)
 
     def send_deals(self, list_of_users):
         msg = MIMEMultipart()

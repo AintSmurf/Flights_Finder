@@ -1,16 +1,8 @@
 import requests
-from auth import GOOGLETOKEN
+from auth import GOOGLETOKEN, SHEETY_PRICES_ENDPOINT, SHEETY_USERS_ENDPOINT
 from flight_search import FlightSearch
 from flight_data import FlightData
 
-
-SHEETY_PRICES_ENDPOINT = (
-    "https://api.sheety.co/8087dbb80005e8a3b46dd2c9b8dc9af0/flightDeals/prices"
-)
-
-SHEETY_USERS_ENDPOINT = (
-    "https://api.sheety.co/8087dbb80005e8a3b46dd2c9b8dc9af0/flightDeals/users"
-)
 
 HEADER = dict()
 HEADER["Authorization"] = f"Bearer {GOOGLETOKEN}"

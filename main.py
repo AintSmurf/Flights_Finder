@@ -3,7 +3,6 @@ from flight_search import FlightSearch
 from flight_data import FlightData
 from notification_manager import NotificationManager
 from datetime import date
-from pprint import pprint
 
 
 # objects
@@ -26,7 +25,7 @@ def main():
         flight_data.convert_to_excel()
 
         # send the deals
-        # notification_manager.send_deals(list_of_users)
+        notification_manager.send_deals(list_of_users)
     else:
         print("Not today")
 
