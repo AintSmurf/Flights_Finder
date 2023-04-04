@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="he-IL" dir="rtl">
+
+<head>
+    <title>טיסות זולות</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="../static/res/fav.png">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,800&display=swap');
+    </style>
+    <link rel="stylesheet" href="../static/css/index.css">
+</head>
+
+<body>
+    <div id="shadow-box" class="shadow-box">
+        <input type="radio" id="excel-flights" name="flight-type" value="excel">
+        <label for="excel-flights">טיסות אקסל</label>
+        <p class="text">ישלח לך קובץ אקסל כל יום ראשון למייל.</p>
+
+        <input type="radio" id="web-flights" name="flight-type" value="web">
+        <label for="web-flights">טיסות באתר</label>
+        <p class="text">דיילים של הטיסות יופיעו לך באתר.</p>
+        <br>
+        <button role="button" class="brn btn-info" id="accept-button">אישור</button>
+    </div>
+    <div class="all">
+        <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+            <div class="top_right">
+                <h2 id="title_h2">טיסות זולות</h2>
+                <img id="link" src="../static/res/fav2.png" alt="secret flights">
+            </div>
+            <div class="top_left">
+                <a href="/"><button class="btn btn-info active" role="button"> ראשי</button></a>
+                <a href="/contact"><button class="btn btn-info b2" role="button"> צור קשר</button></a>
+                <a href="/about"><button class="btn btn-info b2" role="button">שאלות ותשובות</button></a>
+            </div>
+        </nav>
+        <div class="top_center">
+            <h3><em>אנו מודיעים לך מתי יש טיסות ליעדים מדהימים במחירים הכי זולים שתמצאו אי פעם.<br />כל מה
+                    שנשאר זה
+                    רק להירשם! </em>
+            </h3>
+        </div>
+        <br><br><br> <br>
+        <hr>
+        <br><br>
+        <div class="container" id="contact-form">
+            <form method="post">
+                <input id="email_form" class="form-label form-control form-control-md" name="email"
+                    placeholder="כתובת דואר אלקטרוני">
+                <button role="button" class="btn btn-info btn-lg  b2" id="open_shadow_box">עדכנו
+                    אותי!</button>
+            </form>
+            <h2 id="title_exp"><em>איך זה עובד ?</em></h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
+                <img src="../static/res/touch-screen.png" alt="touch-screen">
+                <b>
+                    <p class="explanation_text">פשוט להזין את הדוא"ל שלך כדי להיות חבר במועדון <br>ונתחיל לשלוח לך את
+                        העדכונים הכי
+                        חמים שלנו עם הטיסות הכי הזולות בעולם!</p>
+                </b>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
+                <img src="../static/res/searching.png" alt="searching">
+                <b>
+                    <p role="heading" class="explanation_text">אנחנו נעשה את כל העבודה במציאת ההנחות הטובות ביותר<br>
+                        לטיסות זולות
+                        ומוסתרות
+                        .</p>
+                </b>
+            </div>
+            <div class="col-lg-4 col-md-4 col-xs-4 thumb">
+                <img src="../static/res/suitcase.png" alt="suitcase">
+                <b>
+                    <p class="explanation_text">ניוזלטר התראות שלנו מכיל את המבצעים הטובים ביותר<br> ברגע שנמצא אותם,
+                        אתה רק
+                        צריך להחליט אילו
+                        להזמין,<br> ואז אתה יוצא לחופשה!</p>
+                </b>
+
+            </div>
+        </div>
+        <footer class=" text-center text-lg-start">
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color:#e3f2fd;">
+                <script>document.write(new Date().getFullYear())</script> ©
+                <a class="text-dark">excelflights</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <div class="popup" id="popup">
+            <img class="img" src="../static/res/correct.png" alt="tick">
+            <h2>נרשמת בהצלחה !</h2>
+            <div>האיימיל שלך נשמר בהצלחה <br>ברגע זה קובץ אקסל שמכיל בה את הטיסות הכי זולות להיום נשלח למייל שלך.</div>
+            <button id="main_button" role="button" class="btn btn-info">אישור</button>
+        </div>
+        <div id="cookie-banner" class="">
+            <p> אנחנו משתמשים בקובצי קוקי למספר פונקציות בסיסיות לאתר שלנו. <br>אנחנו צריכים אותם כדי לספק לך את
+                השירותים
+                שלנו כמו שצריך בלעדיהם האתר לא יתפקד כמו שצריך .</P>
+            <button class="btn btn-danger" id="no_cookies">לא מעוניין</button>
+            <button class="btn btn-info" id="accept-cookies">אישור</button>
+
+        </div>
+    </div>
+    <script type="module" src="../static/jquery/show_box.js"></script>
+    <script type="module" src="../static/js/cookies.js"></script>
+    <script type="module" src="../static/jquery/reload.min.js"></script>
+</body>
+
+
+</html>

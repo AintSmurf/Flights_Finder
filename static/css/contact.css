@@ -1,0 +1,213 @@
+body {
+    background-color: #303030;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    color: #17a2b8;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    position: relative;
+    background-color: #e3f2fd;
+    padding: 15px 0;
+    margin-top: auto auto;
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+}
+
+.current-year {
+    font-weight: bold;
+}
+
+
+.top_right {
+    margin-right: 18px;
+}
+
+#title_h2 {
+    font-weight: normal;
+    color: black;
+}
+
+#link {
+    margin-top: -20px;
+    margin-right: 25px;
+}
+
+.container {
+    flex: 1;
+}
+
+
+#img {
+    margin-top: 200px;
+    margin-right: 100px;
+}
+
+.contact-form {
+    margin-left: 100px;
+}
+
+
+.btn-info:hover {
+    background-color: #ff9933;
+}
+
+#contact-form {
+    margin-top: 50px;
+}
+
+#contact-form h2 {
+    margin-bottom: 30px;
+}
+
+#contact-form label {
+    font-weight: bold;
+}
+
+#contact-form input[type=text],
+#contact-form input[type=email],
+#contact-form textarea {
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+#contact-form button[type=submit] {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 25%;
+}
+
+.image-container {
+    position: relative;
+}
+
+#img {
+    transition: all 0.3s ease-out;
+}
+
+#img:hover {
+    animation: rotate 1s linear;
+}
+
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Popup properties*/
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: #fff;
+    border-radius: 6px;
+    width: 400px;
+    transform: translate(-50%, -50%)scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open_popup {
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.close_popup {
+    visibility: hidden;
+    transform: translate(-50%, -50%) scale(0.1);
+}
+
+.popup img {
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup h2 {
+    font-size: 38px;
+    font-weight: 500;
+    margin: 30px 0 10px;
+}
+
+.popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.text-center {
+    font-weight: bold;
+    color: black;
+}
+
+
+
+@media (max-width: 768px) {
+    .top_right {
+        margin-right: 60px;
+    }
+
+    #contact-form {
+        margin: 50px 15px;
+    }
+
+    #link {
+        margin-right: 50px;
+    }
+
+    #contact-form input[type=text],
+    #contact-form input[type=email],
+    #contact-form textarea {
+        width: 100%;
+    }
+
+    #img {
+        margin: 20px auto;
+        padding: auto;
+        padding-right: 100px;
+        position: relative;
+        width: 220px;
+    }
+
+    #img:hover {
+        animation: none;
+    }
+
+    #contact-form button[type=submit] {
+        margin-right: 120px;
+    }
+
+    footer {
+        padding: 5px 0;
+        color: black;
+    }
+
+}
