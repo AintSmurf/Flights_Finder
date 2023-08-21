@@ -44,7 +44,7 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 1. Clone the repository:
-   - git clone https://github.com/AintSmurf/Flights_Finder.git
+  - git clone https://github.com/AintSmurf/Flights_Finder.git
 
 2. Navigate to the project directory:
   - cd Flights_Finder
