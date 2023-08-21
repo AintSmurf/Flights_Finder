@@ -1,5 +1,6 @@
 __pycache__/
 *.py[cod]
-auth.py
+authlocal.py
 deals.csv
 topDeals.xlsx
+venv

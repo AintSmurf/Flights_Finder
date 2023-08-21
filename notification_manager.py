@@ -1,4 +1,3 @@
-import requests
 from auth import YOUR_EMAIL, USER_EMAIL, EMAIL_PASSWORD
 
 # http requests

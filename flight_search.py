@@ -1,6 +1,5 @@
 import requests
 from auth import KIWIAPI
-from pprint import pprint
 
 KIWI_END_POINT = "https://api.tequila.kiwi.com/locations/query"
 HEADER = dict()

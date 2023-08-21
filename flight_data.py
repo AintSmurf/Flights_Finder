@@ -1,15 +1,13 @@
 import requests
-from auth import KIWIAPI
+from auth import KIWIAPI,SEARCH_END_POINT
 from datetime import date
 from dateutil.relativedelta import relativedelta
 import pandas as pd
 from openpyxl import load_workbook
 import copy
-import os
 import json
 
 
-SEARCH_END_POINT = "https://api.tequila.kiwi.com/v2/search"
 HEADER = dict()
 HEADER["apikey"] = f"{KIWIAPI}"
 LS = []
