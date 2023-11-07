@@ -8,7 +8,6 @@ Welcome to the Flight Deals Finder web application ! This application helps user
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
@@ -58,7 +57,3 @@ Before you begin, ensure you have met the following requirements:
 
 ## Contributing
 Contributions are welcome! If you have any suggestions, bug fixes, or improvements, please open an issue or create a pull request.
-
-
-## License
-This project is licensed under the MIT License.
